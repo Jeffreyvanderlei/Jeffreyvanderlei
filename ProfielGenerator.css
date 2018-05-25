@@ -1,0 +1,23 @@
+body {
+      background-image: url("mooi.jpg");
+      color: black;
+}
+div {
+  display: block;
+  background-color: grey;
+  height: 300px;
+  width: 300px;
+  color: beige;
+}
+
+p {
+  padding-top: 20px;
+}
+
+#naam
+{
+  background-color: beige;
+}
+#plaats
+{
+  background-color: beige;
