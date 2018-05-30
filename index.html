@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ProfielSchetser</title>
-  <link href="ProfielGenerator.css" rel="stylesheet" type="text/css">
+    <title>Jeffrey's adresboek</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="stijlAdresboek.css">
 </head>
-<body><center>
+<body>
+    <h1>Jeffrey's adresboek</h1>
 
-<h1><fontsize="8" "face"= "garamond"> ProfielSchetser</font></h1><br></br>
-  <h3>Schets je profiel in een paar stappen</h3><br><br>
-  <h4>Geef antwoord op de volgende vragen:</h4>
-
-  <form>
-    <h2>wat is je naam ?</h2>
-    <input id="naam" type="text">
-    <h2>waar woon je ?</h2>
-    <input id="plaats" type="text">
-  </form><br>
+    <hr>
 
 
+    <div id="uitvoer"></div>
 
-  <button id="schetsen">schets profiel</button><br><br>
+
+    <!--  OEFENING GEGEVENS TOEVOEGEN KNOP  -->
+
+    <button onclick="myFunction()">Contact toevoegen</button>
+
+    <p id="demo"></p>
 
 
-    <h3 id="profielSchets">hier komt je profielschets ...
-    </h3>
-  <script>
-  alert("Welkom bij de ProfielSchetser")
-  </script>
-  <script src = "ProfielGenerator.js"></script> </center>
+<script src="adresboek.js"></script>
+
+<script>
+
+    function myFunction() {
+        var txt;
+        var person = prompt("Please enter your name:", "Mijn naam");
+        if (person == null || person == "") {
+            txt = "User cancelled the prompt.";
+        } else {
+            txt = "Hello " + person + "! How are you today?";
+        }
+        document.getElementById("demo").innerHTML = txt;
+}
+
+
+</script>
+
 </body>
 </html>
